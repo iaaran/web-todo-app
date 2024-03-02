@@ -20,8 +20,8 @@ def done_todo(key):
     fn.set_todos(todos)
 
 
-st.title("My To-DO App")
-st.subheader(" This is my To-Do app")
+st.title("My ToDo App")
+st.subheader(" This is my ToDo app")
 st.write("This app is to increase your productivity")
 
 for index, todo in enumerate(todos):
@@ -31,4 +31,4 @@ st.text_input(label="Enter new todo", label_visibility='hidden', placeholder="Ad
               on_change=add_todo, key='new_todo',
               help='Type a new todo and press enter to add it to')
 
-st.write(st.session_state)
+# st.write(st.session_state)
